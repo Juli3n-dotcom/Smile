@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julien Quentier">
+    <title>test - LVMH</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section class="main" id="main">
+
+        <div class="background_container" id="background_container">$()
+            <div class="background active" data-theme="dark" style="background: url('assets/images/image.webp') no-repeat; background-size: cover;"></div>
+            <div class="background" data-theme="light" style="background: url('assets/images/ce4430843524cc83ab035018343f72a4-min.webp') no-repeat 100% 100%;"></div>
+            <div class="background" data-theme="light" id='slide3' style="background: url('assets/images/6ef76702ca55035aed0a09661530cad4-min.webp');background-size: cover;
+            background-repeat: no-repeat; transform: scaleX(-1);"></div>
+        </div>
+
+        <div class="prev_container dark" id="back">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" with="24px" height="24px">
+                <path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/>
+            </svg>        
+        </div>
+
+        <div class="question_container">
+
+            <div class="frame_container">
+
+                <div class="inspiration_container">
+                        <span class="dark number" id="number">1</span>
+                        <span class="dark separator"> / </span>
+                        <span class="dark"> 07 </span>
+                        <span class="dark inspiration">Inspiration</span>
+                </div>
+
+                <div class="frame_step-bar">
+                    <div class="bar_container" id="bar_container">
+                        <div class="bar dark active" id="1"></div>
+                        <div class="bar dark" id="2"></div>
+                        <div class="bar dark" id="3"></div>
+                        <div class="bar dark" id="4"></div>
+                        <div class="bar dark" id="5"></div>
+                        <div class="bar dark" id="6"></div>
+                        <div class="bar dark" id="7"></div>
+                    </div>
+                </div>
+
+                <div class="question" id="question">
+                    <h1 class="dark stay" data-state="stay">Are you looking for a perfume ?</h1>
+                    <h1 class="dark " data-state="change">Do you have a preference for certain notes ?</H1>
+                    <h1 class="dark" data-state="change">For what colorful inspiration ?</H1>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="response_container active" id="response_container">
+            <div class="response_list-wrap">
+                <div class="response_list">
+                    <div class="arrow dark" id="up_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" with="24px" height="24px">
+                            <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/>
+                        </svg>
+                    </div>
+                    <div class="list_container" data-state="stay" id="response_list-container">
+                        <ul data-state="stay" class="stay">
+                            <li><a href="#" class="response_link dark" id="women">Women</a></li>
+                            <li class="active"><a href="#" class="response_link dark active" id="mixte">Mixte</a></li>
+                            <li><a href="#" class="response_link dark" id="man">Man</a></li>
+                        </ul>
+                       
+                        <ul data-state="change"> 
+                            <li><a href="#" class="response_link dark">Fresh</a></li>
+                            <li><a href="#" class="response_link dark active">Spicy</a></li>
+                            <li><a href="#" class="response_link dark">Floral</a></li>
+                        </ul>
+                        <ul data-state="change">
+                            <li><a href="#" class="response_link dark">Blue</a></li>
+                            <li><a href="#" class="response_link dark active">Green</a></li>
+                            <li><a href="#" class="response_link dark">Red</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="arrow dark" id="down_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" with="24px" height="24px">
+                           <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="list-indicator">
+                    <ul> 
+                    </ul>
+                   </div>
+            </div>
+           
+        </div>
+        
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
